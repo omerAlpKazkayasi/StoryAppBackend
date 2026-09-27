@@ -1,0 +1,6 @@
+{
+  "StoryApp.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\omer.kazkayasi\\Desktop\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Api",
+  "StoryApp.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\omer.kazkayasi\\Desktop\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Application",
+  "StoryApp.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\omer.kazkayasi\\Desktop\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Domain",
+  "StoryApp.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\omer.kazkayasi\\Desktop\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Infrastructure"
+}

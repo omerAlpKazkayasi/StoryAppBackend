@@ -1,0 +1,11 @@
+C:\Users\omer.kazkayasi\Desktop\StoryAppBackEnd\StoryApp\src\StoryApp.Domain\bin\Debug\net10.0\StoryApp.Domain.deps.json
+C:\Users\omer.kazkayasi\Desktop\StoryAppBackEnd\StoryApp\src\StoryApp.Domain\bin\Debug\net10.0\StoryApp.Domain.dll
+C:\Users\omer.kazkayasi\Desktop\StoryAppBackEnd\StoryApp\src\StoryApp.Domain\bin\Debug\net10.0\StoryApp.Domain.pdb
+C:\Users\omer.kazkayasi\Desktop\StoryAppBackEnd\StoryApp\src\StoryApp.Domain\obj\Debug\net10.0\StoryApp.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\omer.kazkayasi\Desktop\StoryAppBackEnd\StoryApp\src\StoryApp.Domain\obj\Debug\net10.0\StoryApp.Domain.AssemblyInfoInputs.cache
+C:\Users\omer.kazkayasi\Desktop\StoryAppBackEnd\StoryApp\src\StoryApp.Domain\obj\Debug\net10.0\StoryApp.Domain.AssemblyInfo.cs
+C:\Users\omer.kazkayasi\Desktop\StoryAppBackEnd\StoryApp\src\StoryApp.Domain\obj\Debug\net10.0\StoryApp.Domain.csproj.CoreCompileInputs.cache
+C:\Users\omer.kazkayasi\Desktop\StoryAppBackEnd\StoryApp\src\StoryApp.Domain\obj\Debug\net10.0\StoryApp.Domain.dll
+C:\Users\omer.kazkayasi\Desktop\StoryAppBackEnd\StoryApp\src\StoryApp.Domain\obj\Debug\net10.0\refint\StoryApp.Domain.dll
+C:\Users\omer.kazkayasi\Desktop\StoryAppBackEnd\StoryApp\src\StoryApp.Domain\obj\Debug\net10.0\StoryApp.Domain.pdb
+C:\Users\omer.kazkayasi\Desktop\StoryAppBackEnd\StoryApp\src\StoryApp.Domain\obj\Debug\net10.0\ref\StoryApp.Domain.dll
