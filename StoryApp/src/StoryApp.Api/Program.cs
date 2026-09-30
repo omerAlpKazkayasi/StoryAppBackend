@@ -1,3 +1,5 @@
+﻿using Microsoft.EntityFrameworkCore;
+using StoryApp.Infrastructure.Persistence;
 using System.Diagnostics;
 using System.Text;
 using System.Threading.RateLimiting;
@@ -23,7 +25,7 @@ builder.Services.AddSwaggerGen(options =>
         Scheme = "bearer",
         BearerFormat = "JWT",
         In = Microsoft.OpenApi.ParameterLocation.Header,
-        Description = "YALNIZCA token değerini yapıştırın ('Bearer' yazmayın, Swagger kendisi otomatik ekler)."
+        Description = "YALNIZCA token deÄŸerini yapÄ±ÅŸtÄ±rÄ±n ('Bearer' yazmayÄ±n, Swagger kendisi otomatik ekler)."
     });
 
     options.AddSecurityRequirement(document => new Microsoft.OpenApi.OpenApiSecurityRequirement
@@ -170,6 +172,12 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 builder.Services.AddAuthorization();
 
 var app = builder.Build();
+
+using (var scope = app.Services.CreateScope())
+{
+    var dbContext = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+    dbContext.Database.Migrate();
+}
 
 app.UseExceptionHandler();
 
