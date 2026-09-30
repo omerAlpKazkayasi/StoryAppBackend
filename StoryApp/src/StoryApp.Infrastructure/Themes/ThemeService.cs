@@ -26,6 +26,7 @@ public sealed class ThemeService : IThemeService
                 x.Description,
                 x.Icon,
                 x.Color,
+                x.ImagePath,
                 x.SortOrder))
             .ToListAsync(cancellationToken);
     }

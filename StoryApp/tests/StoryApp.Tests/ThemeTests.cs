@@ -195,6 +195,7 @@ public class ThemeTests : IClassFixture<ThemeTestFixture>
             Description = "Description of contract",
             Icon = "icon-fantasy",
             Color = "#9C27B0",
+            ImagePath = "themes/fantasy.png",
             SortOrder = 10,
             IsActive = true
         };
@@ -223,6 +224,7 @@ public class ThemeTests : IClassFixture<ThemeTestFixture>
         Assert.Equal("Description of contract", item.Description);
         Assert.Equal("icon-fantasy", item.Icon);
         Assert.Equal("#9C27B0", item.Color);
+        Assert.Equal("themes/fantasy.png", item.ImagePath);
         Assert.Equal(10, item.SortOrder);
     }
 }

@@ -6,4 +6,6 @@ public sealed record ThemeResponse(
     string? Description,
     string? Icon,
     string? Color,
+    string? ImagePath,
     int SortOrder);
+

@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\omer.kazkayasi\\Desktop\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Domain\\StoryApp.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Domain\\StoryApp.Domain.csproj",
       "projectName": "StoryApp.Domain",
-      "projectPath": "C:\\Users\\omer.kazkayasi\\Desktop\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Domain\\StoryApp.Domain.csproj",
+      "projectPath": "C:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Domain\\StoryApp.Domain.csproj",
       "packagesPath": "C:\\Users\\omer.kazkayasi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\omer.kazkayasi\\Desktop\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Domain\\obj\\",
+      "outputPath": "C:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

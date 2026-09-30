@@ -12,6 +12,8 @@ public class Theme : BaseEntity
 
     public string? Color { get; set; }
 
+    public string? ImagePath { get; set; }
+
     public int SortOrder { get; set; }
 
     public bool IsActive { get; set; } = true;
