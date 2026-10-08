@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\tests\\StoryApp.Tests\\StoryApp.Tests.csproj": {}
+    "c:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\tests\\StoryApp.Tests\\StoryApp.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Api\\StoryApp.Api.csproj": {
+    "c:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Api\\StoryApp.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Api\\StoryApp.Api.csproj",
+        "projectUniqueName": "c:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Api\\StoryApp.Api.csproj",
         "projectName": "StoryApp.Api",
-        "projectPath": "C:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Api\\StoryApp.Api.csproj",
+        "projectPath": "c:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Api\\StoryApp.Api.csproj",
         "packagesPath": "C:\\Users\\omer.kazkayasi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Api\\obj\\",
+        "outputPath": "c:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,11 +33,11 @@
             "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Application\\StoryApp.Application.csproj": {
-                "projectPath": "C:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Application\\StoryApp.Application.csproj"
+              "c:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Application\\StoryApp.Application.csproj": {
+                "projectPath": "c:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Application\\StoryApp.Application.csproj"
               },
-              "C:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Infrastructure\\StoryApp.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Infrastructure\\StoryApp.Infrastructure.csproj"
+              "c:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Infrastructure\\StoryApp.Infrastructure.csproj": {
+                "projectPath": "c:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Infrastructure\\StoryApp.Infrastructure.csproj"
               }
             }
           }
@@ -511,14 +511,14 @@
         }
       }
     },
-    "C:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Application\\StoryApp.Application.csproj": {
+    "c:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Application\\StoryApp.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Application\\StoryApp.Application.csproj",
+        "projectUniqueName": "c:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Application\\StoryApp.Application.csproj",
         "projectName": "StoryApp.Application",
-        "projectPath": "C:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Application\\StoryApp.Application.csproj",
+        "projectPath": "c:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Application\\StoryApp.Application.csproj",
         "packagesPath": "C:\\Users\\omer.kazkayasi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Application\\obj\\",
+        "outputPath": "c:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -540,8 +540,8 @@
             "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Domain\\StoryApp.Domain.csproj": {
-                "projectPath": "C:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Domain\\StoryApp.Domain.csproj"
+              "c:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Domain\\StoryApp.Domain.csproj": {
+                "projectPath": "c:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Domain\\StoryApp.Domain.csproj"
               }
             }
           }
@@ -856,14 +856,14 @@
         }
       }
     },
-    "C:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Domain\\StoryApp.Domain.csproj": {
+    "c:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Domain\\StoryApp.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Domain\\StoryApp.Domain.csproj",
+        "projectUniqueName": "c:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Domain\\StoryApp.Domain.csproj",
         "projectName": "StoryApp.Domain",
-        "projectPath": "C:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Domain\\StoryApp.Domain.csproj",
+        "projectPath": "c:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Domain\\StoryApp.Domain.csproj",
         "packagesPath": "C:\\Users\\omer.kazkayasi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Domain\\obj\\",
+        "outputPath": "c:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1197,14 +1197,14 @@
         }
       }
     },
-    "C:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Infrastructure\\StoryApp.Infrastructure.csproj": {
+    "c:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Infrastructure\\StoryApp.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Infrastructure\\StoryApp.Infrastructure.csproj",
+        "projectUniqueName": "c:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Infrastructure\\StoryApp.Infrastructure.csproj",
         "projectName": "StoryApp.Infrastructure",
-        "projectPath": "C:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Infrastructure\\StoryApp.Infrastructure.csproj",
+        "projectPath": "c:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Infrastructure\\StoryApp.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\omer.kazkayasi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Infrastructure\\obj\\",
+        "outputPath": "c:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1226,11 +1226,11 @@
             "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Application\\StoryApp.Application.csproj": {
-                "projectPath": "C:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Application\\StoryApp.Application.csproj"
+              "c:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Application\\StoryApp.Application.csproj": {
+                "projectPath": "c:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Application\\StoryApp.Application.csproj"
               },
-              "C:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Domain\\StoryApp.Domain.csproj": {
-                "projectPath": "C:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Domain\\StoryApp.Domain.csproj"
+              "c:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Domain\\StoryApp.Domain.csproj": {
+                "projectPath": "c:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Domain\\StoryApp.Domain.csproj"
               }
             }
           }
@@ -1565,14 +1565,14 @@
         }
       }
     },
-    "C:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\tests\\StoryApp.Tests\\StoryApp.Tests.csproj": {
+    "c:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\tests\\StoryApp.Tests\\StoryApp.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\tests\\StoryApp.Tests\\StoryApp.Tests.csproj",
+        "projectUniqueName": "c:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\tests\\StoryApp.Tests\\StoryApp.Tests.csproj",
         "projectName": "StoryApp.Tests",
-        "projectPath": "C:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\tests\\StoryApp.Tests\\StoryApp.Tests.csproj",
+        "projectPath": "c:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\tests\\StoryApp.Tests\\StoryApp.Tests.csproj",
         "packagesPath": "C:\\Users\\omer.kazkayasi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\tests\\StoryApp.Tests\\obj\\",
+        "outputPath": "c:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\tests\\StoryApp.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1594,17 +1594,17 @@
             "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Api\\StoryApp.Api.csproj": {
-                "projectPath": "C:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Api\\StoryApp.Api.csproj"
+              "c:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Api\\StoryApp.Api.csproj": {
+                "projectPath": "c:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Api\\StoryApp.Api.csproj"
               },
-              "C:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Application\\StoryApp.Application.csproj": {
-                "projectPath": "C:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Application\\StoryApp.Application.csproj"
+              "c:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Application\\StoryApp.Application.csproj": {
+                "projectPath": "c:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Application\\StoryApp.Application.csproj"
               },
-              "C:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Domain\\StoryApp.Domain.csproj": {
-                "projectPath": "C:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Domain\\StoryApp.Domain.csproj"
+              "c:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Domain\\StoryApp.Domain.csproj": {
+                "projectPath": "c:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Domain\\StoryApp.Domain.csproj"
               },
-              "C:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Infrastructure\\StoryApp.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Infrastructure\\StoryApp.Infrastructure.csproj"
+              "c:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Infrastructure\\StoryApp.Infrastructure.csproj": {
+                "projectPath": "c:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Infrastructure\\StoryApp.Infrastructure.csproj"
               }
             }
           }

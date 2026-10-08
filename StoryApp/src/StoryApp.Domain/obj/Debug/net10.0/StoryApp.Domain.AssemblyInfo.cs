@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StoryApp.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5c581af74cfca1337ca6f2650f93dac9b0690069")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cadbd7bcc2f783df4fd23ff36e3c1a62b72cbb84")]
 [assembly: System.Reflection.AssemblyProductAttribute("StoryApp.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StoryApp.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
