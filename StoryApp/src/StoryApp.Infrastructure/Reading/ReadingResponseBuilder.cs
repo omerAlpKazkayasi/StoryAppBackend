@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using StoryApp.Application.Common.Exceptions;
 using StoryApp.Application.Reading;
 using StoryApp.Infrastructure.Persistence;
 
@@ -20,7 +21,12 @@ public static class ReadingResponseBuilder
                 n.Title,
                 n.IsEnding
             })
-            .FirstAsync(cancellationToken);
+            .FirstOrDefaultAsync(cancellationToken);
+
+        if (node == null)
+        {
+            throw new NotFoundException("Story node not found.");
+        }
 
         var scenes = await dbContext.StoryNodeScenes
             .AsNoTracking()

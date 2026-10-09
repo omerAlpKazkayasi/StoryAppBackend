@@ -1,0 +1,34 @@
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=tcp:your-production-sql-server.database.windows.net,1433;Database=StoryAppDb;User ID=your-user;Password=your-strong-password;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Warning",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "Jwt": {
+    "SigningKey": "REPLACE_WITH_MINIMUM_32_BYTES_STRONG_SECRET_KEY_FOR_PRODUCTION_!",
+    "Issuer": "StoryApp",
+    "Audience": "StoryApp.Mobile",
+    "AccessTokenMinutes": 15,
+    "RefreshTokenDays": 30
+  },
+  "Authentication": {
+    "Google": {
+      "ClientIds": [
+        "your-production-google-client-id.apps.googleusercontent.com"
+      ]
+    }
+  },
+  "RateLimiting": {
+    "Auth": {
+      "GuestPermitLimit": 30,
+      "RefreshPermitLimit": 60,
+      "GoogleLoginPermitLimit": 30,
+      "GoogleUpgradePermitLimit": 30,
+      "WindowMinutes": 1
+    }
+  }
+}

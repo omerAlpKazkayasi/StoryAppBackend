@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Z1zTldykk8Y=",
+  "dgSpecHash": "BwatHd8Atcs=",
   "success": true,
-  "projectFilePath": "c:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Api\\StoryApp.Api.csproj",
+  "projectFilePath": "C:\\Users\\omer.kazkayasi\\Desktop\\StoryAppWorkSpaces\\StoryAppBackEnd\\StoryApp\\src\\StoryApp.Api\\StoryApp.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\omer.kazkayasi\\.nuget\\packages\\azure.core\\1.50.0\\azure.core.1.50.0.nupkg.sha512",
     "C:\\Users\\omer.kazkayasi\\.nuget\\packages\\azure.identity\\1.17.1\\azure.identity.1.17.1.nupkg.sha512",

@@ -240,6 +240,192 @@ public class GlobalExceptionHandlerTests
         Assert.Equal(LogLevel.Warning, testLogger.LoggedMessages[0].LogLevel);
     }
 
+    [Fact]
+    public async Task TryHandleAsync_WhenUnauthorizedAccessException_Returns401ProblemDetails_AndLogsWarning()
+    {
+        // Arrange
+        var services = new ServiceCollection();
+        services.AddProblemDetails(options =>
+        {
+            options.CustomizeProblemDetails = context =>
+            {
+                context.ProblemDetails.Instance ??= context.HttpContext.Request.Path.Value;
+                var traceId = Activity.Current?.Id ?? context.HttpContext.TraceIdentifier;
+                context.ProblemDetails.Extensions.TryAdd("traceId", traceId);
+            };
+        });
+        using var serviceProvider = services.BuildServiceProvider();
+
+        var problemDetailsService = serviceProvider.GetRequiredService<IProblemDetailsService>();
+        var testLogger = new TestLogger<GlobalExceptionHandler>();
+        var handler = new GlobalExceptionHandler(testLogger, problemDetailsService);
+
+        var context = new DefaultHttpContext
+        {
+            RequestServices = serviceProvider
+        };
+        context.Request.Path = "/api/test-unauthorized";
+        context.TraceIdentifier = "trace-unauth-1";
+        context.Response.Body = new MemoryStream();
+
+        var unauthEx = new UnauthorizedAccessException("Access is denied.");
+
+        // Act
+        var handled = await handler.TryHandleAsync(context, unauthEx, CancellationToken.None);
+
+        // Assert
+        Assert.True(handled);
+        Assert.Equal(StatusCodes.Status401Unauthorized, context.Response.StatusCode);
+
+        context.Response.Body.Seek(0, SeekOrigin.Begin);
+        using var reader = new StreamReader(context.Response.Body);
+        var json = await reader.ReadToEndAsync();
+        using var doc = JsonDocument.Parse(json);
+        var root = doc.RootElement;
+
+        Assert.Equal(401, root.GetProperty("status").GetInt32());
+        Assert.Equal("Unauthorized", root.GetProperty("title").GetString());
+        Assert.Equal("Access is denied.", root.GetProperty("detail").GetString());
+
+        Assert.Single(testLogger.LoggedMessages);
+        Assert.Equal(LogLevel.Warning, testLogger.LoggedMessages[0].LogLevel);
+    }
+
+    [Fact]
+    public async Task TryHandleAsync_WhenOperationCanceledException_ReturnsTrue_AndLogsInformation()
+    {
+        // Arrange
+        var services = new ServiceCollection();
+        services.AddOptions();
+        services.AddProblemDetails();
+        using var serviceProvider = services.BuildServiceProvider();
+
+        var problemDetailsService = serviceProvider.GetRequiredService<IProblemDetailsService>();
+        var testLogger = new TestLogger<GlobalExceptionHandler>();
+        var handler = new GlobalExceptionHandler(testLogger, problemDetailsService);
+
+        var context = new DefaultHttpContext
+        {
+            RequestServices = serviceProvider
+        };
+        context.Request.Path = "/api/test-canceled";
+        context.TraceIdentifier = "trace-canceled-1";
+        context.Response.Body = new MemoryStream();
+
+        var cancelEx = new OperationCanceledException("Operation was canceled.");
+
+        // Act
+        var handled = await handler.TryHandleAsync(context, cancelEx, CancellationToken.None);
+
+        // Assert
+        Assert.True(handled);
+        Assert.Single(testLogger.LoggedMessages);
+        Assert.Equal(LogLevel.Information, testLogger.LoggedMessages[0].LogLevel);
+        Assert.Contains("/api/test-canceled", testLogger.LoggedMessages[0].Message);
+    }
+
+    [Fact]
+    public async Task TryHandleAsync_WhenDbUpdateConcurrencyException_Returns409ProblemDetails_AndLogsWarning()
+    {
+        // Arrange
+        var services = new ServiceCollection();
+        services.AddProblemDetails(options =>
+        {
+            options.CustomizeProblemDetails = context =>
+            {
+                context.ProblemDetails.Instance ??= context.HttpContext.Request.Path.Value;
+                var traceId = Activity.Current?.Id ?? context.HttpContext.TraceIdentifier;
+                context.ProblemDetails.Extensions.TryAdd("traceId", traceId);
+            };
+        });
+        using var serviceProvider = services.BuildServiceProvider();
+
+        var problemDetailsService = serviceProvider.GetRequiredService<IProblemDetailsService>();
+        var testLogger = new TestLogger<GlobalExceptionHandler>();
+        var handler = new GlobalExceptionHandler(testLogger, problemDetailsService);
+
+        var context = new DefaultHttpContext
+        {
+            RequestServices = serviceProvider
+        };
+        context.Request.Path = "/api/test-db-concurrency";
+        context.TraceIdentifier = "trace-concurrency-1";
+        context.Response.Body = new MemoryStream();
+
+        var concurrencyEx = new Microsoft.EntityFrameworkCore.DbUpdateConcurrencyException("Concurrency conflict.");
+
+        // Act
+        var handled = await handler.TryHandleAsync(context, concurrencyEx, CancellationToken.None);
+
+        // Assert
+        Assert.True(handled);
+        Assert.Equal(StatusCodes.Status409Conflict, context.Response.StatusCode);
+
+        context.Response.Body.Seek(0, SeekOrigin.Begin);
+        using var reader = new StreamReader(context.Response.Body);
+        var json = await reader.ReadToEndAsync();
+        using var doc = JsonDocument.Parse(json);
+        var root = doc.RootElement;
+
+        Assert.Equal(409, root.GetProperty("status").GetInt32());
+        Assert.Equal("Conflict", root.GetProperty("title").GetString());
+        Assert.Contains("concurrently", root.GetProperty("detail").GetString());
+
+        Assert.Single(testLogger.LoggedMessages);
+        Assert.Equal(LogLevel.Warning, testLogger.LoggedMessages[0].LogLevel);
+    }
+
+    [Fact]
+    public async Task TryHandleAsync_WhenBadHttpRequestException_Returns400ProblemDetails_AndLogsWarning()
+    {
+        // Arrange
+        var services = new ServiceCollection();
+        services.AddProblemDetails(options =>
+        {
+            options.CustomizeProblemDetails = context =>
+            {
+                context.ProblemDetails.Instance ??= context.HttpContext.Request.Path.Value;
+                var traceId = Activity.Current?.Id ?? context.HttpContext.TraceIdentifier;
+                context.ProblemDetails.Extensions.TryAdd("traceId", traceId);
+            };
+        });
+        using var serviceProvider = services.BuildServiceProvider();
+
+        var problemDetailsService = serviceProvider.GetRequiredService<IProblemDetailsService>();
+        var testLogger = new TestLogger<GlobalExceptionHandler>();
+        var handler = new GlobalExceptionHandler(testLogger, problemDetailsService);
+
+        var context = new DefaultHttpContext
+        {
+            RequestServices = serviceProvider
+        };
+        context.Request.Path = "/api/test-bad-request";
+        context.TraceIdentifier = "trace-bad-req-1";
+        context.Response.Body = new MemoryStream();
+
+        var badReqEx = new BadHttpRequestException("Invalid request format.");
+
+        // Act
+        var handled = await handler.TryHandleAsync(context, badReqEx, CancellationToken.None);
+
+        // Assert
+        Assert.True(handled);
+        Assert.Equal(StatusCodes.Status400BadRequest, context.Response.StatusCode);
+
+        context.Response.Body.Seek(0, SeekOrigin.Begin);
+        using var reader = new StreamReader(context.Response.Body);
+        var json = await reader.ReadToEndAsync();
+        using var doc = JsonDocument.Parse(json);
+        var root = doc.RootElement;
+
+        Assert.Equal(400, root.GetProperty("status").GetInt32());
+        Assert.Equal("Bad Request", root.GetProperty("title").GetString());
+        Assert.Equal("Invalid request format.", root.GetProperty("detail").GetString());
+
+        Assert.Single(testLogger.LoggedMessages);
+        Assert.Equal(LogLevel.Warning, testLogger.LoggedMessages[0].LogLevel);
+    }
+
     private sealed class TestLogger<T> : ILogger<T>
     {
         public List<(LogLevel LogLevel, string Message, Exception? Exception)> LoggedMessages { get; } = new();

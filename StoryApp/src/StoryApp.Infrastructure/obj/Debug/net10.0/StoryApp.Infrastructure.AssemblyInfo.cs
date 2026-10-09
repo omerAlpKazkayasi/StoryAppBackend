@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StoryApp.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cadbd7bcc2f783df4fd23ff36e3c1a62b72cbb84")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d4f65281f28f55e5ac3e4557a43c003d057f22d9")]
 [assembly: System.Reflection.AssemblyProductAttribute("StoryApp.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StoryApp.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

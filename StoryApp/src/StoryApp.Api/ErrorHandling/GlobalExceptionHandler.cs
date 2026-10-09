@@ -1,6 +1,8 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Diagnostics;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using StoryApp.Application.Common.Exceptions;
 
 namespace StoryApp.Api.ErrorHandling;
@@ -31,6 +33,15 @@ public sealed class GlobalExceptionHandler : IExceptionHandler
 
         var traceId = Activity.Current?.Id ?? httpContext.TraceIdentifier;
 
+        if (exception is OperationCanceledException)
+        {
+            _logger.LogInformation(
+                "Request was canceled by the client. RequestPath: {RequestPath}, TraceId: {TraceId}",
+                httpContext.Request.Path.Value,
+                traceId);
+            return true;
+        }
+
         int statusCode;
         string type;
         string title;
@@ -59,6 +70,45 @@ public sealed class GlobalExceptionHandler : IExceptionHandler
             _logger.LogWarning(
                 exception,
                 "Business conflict occurred. RequestPath: {RequestPath}, TraceId: {TraceId}",
+                httpContext.Request.Path.Value,
+                traceId);
+        }
+        else if (exception is DbUpdateConcurrencyException concurrencyEx)
+        {
+            statusCode = StatusCodes.Status409Conflict;
+            type = "https://tools.ietf.org/html/rfc9110#section-15.5.10";
+            title = "Conflict";
+            detail = "The resource was modified concurrently. Please refresh and try again.";
+
+            _logger.LogWarning(
+                concurrencyEx,
+                "Database concurrency conflict. RequestPath: {RequestPath}, TraceId: {TraceId}",
+                httpContext.Request.Path.Value,
+                traceId);
+        }
+        else if (exception is BadHttpRequestException badRequest)
+        {
+            statusCode = StatusCodes.Status400BadRequest;
+            type = "https://tools.ietf.org/html/rfc9110#section-15.5.1";
+            title = "Bad Request";
+            detail = badRequest.Message;
+
+            _logger.LogWarning(
+                badRequest,
+                "Bad HTTP request. RequestPath: {RequestPath}, TraceId: {TraceId}",
+                httpContext.Request.Path.Value,
+                traceId);
+        }
+        else if (exception is UnauthorizedAccessException unauthorized)
+        {
+            statusCode = StatusCodes.Status401Unauthorized;
+            type = "https://tools.ietf.org/html/rfc9110#section-15.5.2";
+            title = "Unauthorized";
+            detail = unauthorized.Message;
+
+            _logger.LogWarning(
+                exception,
+                "Unauthorized access attempt. RequestPath: {RequestPath}, TraceId: {TraceId}",
                 httpContext.Request.Path.Value,
                 traceId);
         }
